@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+html {
+  height: 100%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #001226;
+  background-image: url(../images/1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden; }
+
+.inner {
+  width: 430px;
+  height: 430px;
+  position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  bottom: -1500px;
+  transition: bottom 1s cubic-bezier(0.22, 0.18, 0.49, 1.26); }
+  .inner.inner-bottom {
+    bottom: 280px; }
+  .inner .screen {
+    height: 300px;
+    width: 300px;
+    background: url(../images/12.jpg) no-repeat 0/430px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    .inner .screen .loding {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8); }
+      .inner .screen .loding .loding-inner {
+        padding: 120px 0 0 0;
+        text-align: center; }
+      .inner .screen .loding .loding-waiting {
+        width: 120px;
+        height: 5px;
+        border-radius: 5px;
+        margin: 10px auto; }
+        .inner .screen .loding .loding-waiting div {
+          height: 100%;
+          width: 0;
+          border-radius: 5px;
+          background: red;
+          transition: width 3s ease; }
+          .inner .screen .loding .loding-waiting div.load {
+            animation: loading 2s ease both; }
+
+@keyframes loading {
+  0% {
+    width: 0; }
+  50% {
+    width: 60px; }
+  80% {
+    width: 100px; }
+  100% {
+    width: 120px; } }
+
+.regular {
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.75);
+  bottom: -1500px;
+  color: #fff;
+  line-height: 30px;
+  transition: bottom 1s cubic-bezier(0.22, 0.18, 0.49, 1.26); }
+  .regular.regular-bottom {
+    bottom: 200px; }
+  .regular .close {
+    width: 100%;
+    height: 30px;
+    background: url("../images/close.png") no-repeat top right/20px 20px; }
+
+.gezi {
+  height: 20px;
+  width: 20px;
+  float: left;
+  box-shadow: 1px 1px 2px #4E77B3,-1px -1px 2px #4E77B3;
+  background: rgba(255, 255, 255, 0.6); }
+
+.she {
+  background: url(../images/11.jpg) center center/100%;
+  border-radius: 50%;
+  background-color: transparent;
+  height: 20px;
+  width: 20px; }
+
+.shen {
+  height: 12px;
+  width: 12px;
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid #c452ff;
+  background: #c452ff;
+  background-clip: content-box; }
+
+.food {
+  background-image: url(../images/qingwa.jpeg);
+  background-size: 100%;
+  border-radius: 50%;
+  background-color: transparent; }
+
+.list {
+  height: 300px;
+  width: 200px;
+  overflow: hidden;
+  background: url(../images/22.png) no-repeat center center/100%;
+  position: absolute;
+  font-size: 30px;
+  font-family: Georgia;
+  left: 0;
+  right: 0;
+  top: -1000px;
+  color: #40784b;
+  box-sizing: padding-box;
+  margin: auto;
+  transition: top 1s cubic-bezier(0.27, 0.25, 0.4, 0.38);
+  animation: font 3s cubic-bezier(0.27, 0.25, 0.4, 0.38) both; }
+
+@keyframes font {
+  from {
+    top: -1000px; }
+  to {
+    top: 400px; } }
+
+.icon-box {
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  right: 0;
+  margin: auto;
+  transition: top 1s cubic-bezier(0.27, 0.25, 0.4, 0.38), transform 3s ease 3s;
+  animation: round 6s infinite cubic-bezier(0.27, 0.25, 0.4, 0.38); }
+  .icon-box.stop {
+    animation-play-state: paused; }
+
+@keyframes round {
+  from {
+    transform: rotate(1turn); } }
+  .icon-box li {
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: url(../images/1.png) no-repeat 0 0/100%;
+    text-align: center;
+    font-size: 0;
+    position: absolute;
+    color: #d00889;
+    text-shadow: 1px 1px #fff;
+    font-weight: 200;
+    font-family: "Angsana New";
+    cursor: pointer;
+    transition: width 1s cubic-bezier(0.27, 0.25, 0.4, 0.38), height 1s cubic-bezier(0.27, 0.25, 0.4, 0.38), line-height 1s cubic-bezier(0.27, 0.25, 0.4, 0.38), left 4s cubic-bezier(0.27, 0.25, 0.4, 0.38), top 1s cubic-bezier(0.27, 0.25, 0.4, 0.38);
+    animation: whidth 3s cubic-bezier(0.27, 0.25, 0.4, 0.38) both 3s, left 6s infinite cubic-bezier(0.27, 0.25, 0.4, 0.38); }
+
+@keyframes left {
+  from {
+    transform: rotate(-1turn); } }
+
+@keyframes whidth {
+  from {
+    width: 0px;
+    height: 0px;
+    line-height: 0; }
+  to {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 12px; } }
+    .icon-box li.lis1 {
+      left: 0;
+      top: 0;
+      bottom: 0px;
+      margin: auto; }
+    .icon-box li.lis2 {
+      background: url(../images/3.jpg) no-repeat 0/100%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 0px; }
+    .icon-box li.lis3 {
+      right: 0px;
+      top: 0px;
+      bottom: 0;
+      margin: auto;
+      background: url(../images/2.png) 0/100%; }
+    .icon-box li.lis4 {
+      top: 0px;
+      left: 0px;
+      right: 0;
+      margin: auto;
+      background: url(../images/3.png) 0/100%; }
+    .icon-box li.lis-state {
+      animation-play-state: paused; }
+
+.alert-box {
+  height: 180px;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.6);
+  top: -1500px;
+  transition: top 2s ease; }
+  .alert-box.alert-inner-top {
+    top: 0; }
+  .alert-box .alert-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 180px;
+    width: 300px;
+    border-radius: 20px;
+    background: url(../images/alert1.jpg) no-repeat 0/100%; }
+    .alert-box .alert-inner .alert-content {
+      height: 120px;
+      line-height: 80px;
+      text-align: center;
+      color: #0a0a0a; }
+    .alert-box .alert-inner .yes, .alert-box .alert-inner .no {
+      float: left;
+      height: 60px;
+      width: 149px;
+      borber-top: 1px;
+      border-top-style: solid;
+      border-top-color: rgba(247, 245, 187, 0.92);
+      background: rgba(247, 245, 187, 0.92);
+      line-height: 60px;
+      text-align: center;
+      color: #0f6197;
+      cursor: pointer; }
+    .alert-box .alert-inner .yes {
+      borber-right: 1px;
+      border-right-style: solid;
+      border-right-color: rgba(238, 247, 245, 0.92); }
+    .alert-box .alert-inner .no {
+      width: 148px;
+      float: right; }
